@@ -1,3 +1,4 @@
+// Creates a cube as IfcBuildingElementProxy using IfcFaceBasedSurfaceModel
 
 #include <iostream>
 #include <fstream>

@@ -90,11 +90,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\src\ifc\Entity.h" />
-    <ClInclude Include="..\src\ifc\Guid.h" />
     <ClInclude Include="..\src\ifc\Model.h" />
     <ClInclude Include="..\src\ifc\StepWriter.h" />
-    <ClInclude Include="..\src\ifc\Utilities.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\test\test_create_cube_ifc2x3.cpp" />
