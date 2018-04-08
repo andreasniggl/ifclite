@@ -24,7 +24,7 @@ namespace ifc
       std::string author;
       std::string organization;
       std::string preprocessor_version;
-      std::string originating_system;
+      std::string originating_system = "ifclite toolkit";
       std::string authorization;
    };
 

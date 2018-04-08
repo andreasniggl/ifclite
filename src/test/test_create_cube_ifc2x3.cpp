@@ -1,8 +1,6 @@
 
 #include <iostream>
 #include <fstream>
-//#include <vector>
-
 
 #include "Model.h"
 #include "StepWriter.h"
@@ -195,16 +193,12 @@ int main(int argc, char** argv)
       create_cube(model);
 
       std::ofstream fs;
-      fs.open("D:\\sofistik\\proj\\sof_express_tools\\test\\test.ifc");
+      fs.open("cube_ifc2x3.ifc");
 
       if (fs.is_open())
       {
          ifc::StepWriter w(fs);
-
-         w.header.filename = "test.ifc";
-         w.header.organization = "SOFiSTiK AG";
          w.header.description = "ViewDefinition [Coordination View V2.0]";
-         w.header.originating_system = "sof_sdai_toolkit";
 
          model.serialize(w);
       }
