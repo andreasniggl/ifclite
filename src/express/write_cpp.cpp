@@ -206,7 +206,7 @@ void sdai::CppGenerator::generateTypeDefinitions(const std::string& include_dire
    fs.open(header_file);
 
    if (!fs.is_open())
-      return;
+      throw new std::runtime_error("Unable to open file: " + header_file.string());
    
    util::write_header_text(fs, schema);
 
@@ -271,7 +271,7 @@ void sdai::CppGenerator::generateTypeDefinitions(const std::string& include_dire
          fs << std::endl;
 
          // string map
-         fs << "   const char * " << td.name << "StringMap[] = {" << std::endl;
+         fs << "   static const char * " << td.name << "StringMap[] = {" << std::endl;
          for (size_t i = 0; i < td.items.size(); ++i)
          {
             if (i > 0)

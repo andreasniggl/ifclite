@@ -31,10 +31,6 @@ namespace ifc2x3
       {
          m_w.writeAttributeValue(p);
       }
-      void operator() (IfcLogical p) const
-      {
-         m_w.writeAttributeValue(p);
-      }
    private:
       ifc::StepWriter& m_w;
    };

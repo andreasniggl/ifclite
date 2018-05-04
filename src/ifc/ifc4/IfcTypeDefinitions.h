@@ -151,7 +151,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcActionRequestTypeEnumStringMap[] = {
+   static const char * IfcActionRequestTypeEnumStringMap[] = {
       "EMAIL",
       "FAX",
       "PHONE",
@@ -191,7 +191,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcActionSourceTypeEnumStringMap[] = {
+   static const char * IfcActionSourceTypeEnumStringMap[] = {
       "DEAD_LOAD_G",
       "COMPLETION_G1",
       "LIVE_LOAD_Q",
@@ -229,7 +229,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcActionTypeEnumStringMap[] = {
+   static const char * IfcActionTypeEnumStringMap[] = {
       "PERMANENT_G",
       "VARIABLE_Q",
       "EXTRAORDINARY_A",
@@ -247,7 +247,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcActuatorTypeEnumStringMap[] = {
+   static const char * IfcActuatorTypeEnumStringMap[] = {
       "ELECTRICACTUATOR",
       "HANDOPERATEDACTUATOR",
       "HYDRAULICACTUATOR",
@@ -265,7 +265,7 @@ namespace ifc4
       USERDEFINED
    };
 
-   const char * IfcAddressTypeEnumStringMap[] = {
+   static const char * IfcAddressTypeEnumStringMap[] = {
       "OFFICE",
       "SITE",
       "HOME",
@@ -281,7 +281,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcAirTerminalBoxTypeEnumStringMap[] = {
+   static const char * IfcAirTerminalBoxTypeEnumStringMap[] = {
       "CONSTANTFLOW",
       "VARIABLEFLOWPRESSUREDEPENDANT",
       "VARIABLEFLOWPRESSUREINDEPENDANT",
@@ -298,7 +298,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcAirTerminalTypeEnumStringMap[] = {
+   static const char * IfcAirTerminalTypeEnumStringMap[] = {
       "DIFFUSER",
       "GRILLE",
       "LOUVRE",
@@ -321,7 +321,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcAirToAirHeatRecoveryTypeEnumStringMap[] = {
+   static const char * IfcAirToAirHeatRecoveryTypeEnumStringMap[] = {
       "FIXEDPLATECOUNTERFLOWEXCHANGER",
       "FIXEDPLATECROSSFLOWEXCHANGER",
       "FIXEDPLATEPARALLELFLOWEXCHANGER",
@@ -346,7 +346,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcAlarmTypeEnumStringMap[] = {
+   static const char * IfcAlarmTypeEnumStringMap[] = {
       "BELL",
       "BREAKGLASSBUTTON",
       "LIGHT",
@@ -365,7 +365,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcAnalysisModelTypeEnumStringMap[] = {
+   static const char * IfcAnalysisModelTypeEnumStringMap[] = {
       "IN_PLANE_LOADING_2D",
       "OUT_PLANE_LOADING_2D",
       "LOADING_3D",
@@ -382,7 +382,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcAnalysisTheoryTypeEnumStringMap[] = {
+   static const char * IfcAnalysisTheoryTypeEnumStringMap[] = {
       "FIRST_ORDER_THEORY",
       "SECOND_ORDER_THEORY",
       "THIRD_ORDER_THEORY",
@@ -398,7 +398,7 @@ namespace ifc4
       SUBTRACT
    };
 
-   const char * IfcArithmeticOperatorEnumStringMap[] = {
+   static const char * IfcArithmeticOperatorEnumStringMap[] = {
       "ADD",
       "DIVIDE",
       "MULTIPLY",
@@ -411,7 +411,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcAssemblyPlaceEnumStringMap[] = {
+   static const char * IfcAssemblyPlaceEnumStringMap[] = {
       "SITE",
       "FACTORY",
       "NOTDEFINED"
@@ -433,7 +433,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcAudioVisualApplianceTypeEnumStringMap[] = {
+   static const char * IfcAudioVisualApplianceTypeEnumStringMap[] = {
       "AMPLIFIER",
       "CAMERA",
       "DISPLAY",
@@ -458,7 +458,7 @@ namespace ifc4
       UNSPECIFIED
    };
 
-   const char * IfcBSplineCurveFormStringMap[] = {
+   static const char * IfcBSplineCurveFormStringMap[] = {
       "POLYLINE_FORM",
       "CIRCULAR_ARC",
       "ELLIPTIC_ARC",
@@ -481,7 +481,7 @@ namespace ifc4
       UNSPECIFIED
    };
 
-   const char * IfcBSplineSurfaceFormStringMap[] = {
+   static const char * IfcBSplineSurfaceFormStringMap[] = {
       "PLANE_SURF",
       "CYLINDRICAL_SURF",
       "CONICAL_SURF",
@@ -506,7 +506,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcBeamTypeEnumStringMap[] = {
+   static const char * IfcBeamTypeEnumStringMap[] = {
       "BEAM",
       "JOIST",
       "HOLLOWCORE",
@@ -530,7 +530,7 @@ namespace ifc4
       NOTINCLUDEDIN
    };
 
-   const char * IfcBenchmarkEnumStringMap[] = {
+   static const char * IfcBenchmarkEnumStringMap[] = {
       "GREATERTHAN",
       "GREATERTHANOREQUALTO",
       "LESSTHAN",
@@ -550,7 +550,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcBoilerTypeEnumStringMap[] = {
+   static const char * IfcBoilerTypeEnumStringMap[] = {
       "WATER",
       "STEAM",
       "USERDEFINED",
@@ -563,7 +563,7 @@ namespace ifc4
       DIFFERENCE
    };
 
-   const char * IfcBooleanOperatorStringMap[] = {
+   static const char * IfcBooleanOperatorStringMap[] = {
       "UNION",
       "INTERSECTION",
       "DIFFERENCE"
@@ -576,7 +576,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcBuildingElementPartTypeEnumStringMap[] = {
+   static const char * IfcBuildingElementPartTypeEnumStringMap[] = {
       "INSULATION",
       "PRECASTPANEL",
       "USERDEFINED",
@@ -593,7 +593,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcBuildingElementProxyTypeEnumStringMap[] = {
+   static const char * IfcBuildingElementProxyTypeEnumStringMap[] = {
       "COMPLEX",
       "ELEMENT",
       "PARTIAL",
@@ -614,7 +614,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcBuildingSystemTypeEnumStringMap[] = {
+   static const char * IfcBuildingSystemTypeEnumStringMap[] = {
       "FENESTRATION",
       "FOUNDATION",
       "LOADBEARING",
@@ -630,7 +630,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcBurnerTypeEnumStringMap[] = {
+   static const char * IfcBurnerTypeEnumStringMap[] = {
       "USERDEFINED",
       "NOTDEFINED"
    };
@@ -644,7 +644,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcCableCarrierFittingTypeEnumStringMap[] = {
+   static const char * IfcCableCarrierFittingTypeEnumStringMap[] = {
       "BEND",
       "CROSS",
       "REDUCER",
@@ -662,7 +662,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcCableCarrierSegmentTypeEnumStringMap[] = {
+   static const char * IfcCableCarrierSegmentTypeEnumStringMap[] = {
       "CABLELADDERSEGMENT",
       "CABLETRAYSEGMENT",
       "CABLETRUNKINGSEGMENT",
@@ -681,7 +681,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcCableFittingTypeEnumStringMap[] = {
+   static const char * IfcCableFittingTypeEnumStringMap[] = {
       "CONNECTOR",
       "ENTRY",
       "EXIT",
@@ -700,7 +700,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcCableSegmentTypeEnumStringMap[] = {
+   static const char * IfcCableSegmentTypeEnumStringMap[] = {
       "BUSBARSEGMENT",
       "CABLESEGMENT",
       "CONDUCTORSEGMENT",
@@ -717,7 +717,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcChangeActionEnumStringMap[] = {
+   static const char * IfcChangeActionEnumStringMap[] = {
       "NOCHANGE",
       "MODIFIED",
       "ADDED",
@@ -733,7 +733,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcChillerTypeEnumStringMap[] = {
+   static const char * IfcChillerTypeEnumStringMap[] = {
       "AIRCOOLED",
       "WATERCOOLED",
       "HEATRECOVERY",
@@ -746,7 +746,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcChimneyTypeEnumStringMap[] = {
+   static const char * IfcChimneyTypeEnumStringMap[] = {
       "USERDEFINED",
       "NOTDEFINED"
    };
@@ -763,7 +763,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcCoilTypeEnumStringMap[] = {
+   static const char * IfcCoilTypeEnumStringMap[] = {
       "DXCOOLINGCOIL",
       "ELECTRICHEATINGCOIL",
       "GASHEATINGCOIL",
@@ -782,7 +782,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcColumnTypeEnumStringMap[] = {
+   static const char * IfcColumnTypeEnumStringMap[] = {
       "COLUMN",
       "PILASTER",
       "USERDEFINED",
@@ -806,7 +806,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcCommunicationsApplianceTypeEnumStringMap[] = {
+   static const char * IfcCommunicationsApplianceTypeEnumStringMap[] = {
       "ANTENNA",
       "COMPUTER",
       "FAX",
@@ -828,7 +828,7 @@ namespace ifc4
       Q_COMPLEX
    };
 
-   const char * IfcComplexPropertyTemplateTypeEnumStringMap[] = {
+   static const char * IfcComplexPropertyTemplateTypeEnumStringMap[] = {
       "P_COMPLEX",
       "Q_COMPLEX"
    };
@@ -853,7 +853,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcCompressorTypeEnumStringMap[] = {
+   static const char * IfcCompressorTypeEnumStringMap[] = {
       "DYNAMIC",
       "RECIPROCATING",
       "ROTARY",
@@ -885,7 +885,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcCondenserTypeEnumStringMap[] = {
+   static const char * IfcCondenserTypeEnumStringMap[] = {
       "AIRCOOLED",
       "EVAPORATIVECOOLED",
       "WATERCOOLED",
@@ -904,7 +904,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcConnectionTypeEnumStringMap[] = {
+   static const char * IfcConnectionTypeEnumStringMap[] = {
       "ATPATH",
       "ATSTART",
       "ATEND",
@@ -919,7 +919,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcConstraintEnumStringMap[] = {
+   static const char * IfcConstraintEnumStringMap[] = {
       "HARD",
       "SOFT",
       "ADVISORY",
@@ -940,7 +940,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcConstructionEquipmentResourceTypeEnumStringMap[] = {
+   static const char * IfcConstructionEquipmentResourceTypeEnumStringMap[] = {
       "DEMOLISHING",
       "EARTHMOVING",
       "ERECTING",
@@ -967,7 +967,7 @@ namespace ifc4
       USERDEFINED
    };
 
-   const char * IfcConstructionMaterialResourceTypeEnumStringMap[] = {
+   static const char * IfcConstructionMaterialResourceTypeEnumStringMap[] = {
       "AGGREGATES",
       "CONCRETE",
       "DRYWALL",
@@ -988,7 +988,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcConstructionProductResourceTypeEnumStringMap[] = {
+   static const char * IfcConstructionProductResourceTypeEnumStringMap[] = {
       "ASSEMBLY",
       "FORMWORK",
       "USERDEFINED",
@@ -1005,7 +1005,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcControllerTypeEnumStringMap[] = {
+   static const char * IfcControllerTypeEnumStringMap[] = {
       "FLOATING",
       "PROGRAMMABLE",
       "PROPORTIONAL",
@@ -1022,7 +1022,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcCooledBeamTypeEnumStringMap[] = {
+   static const char * IfcCooledBeamTypeEnumStringMap[] = {
       "ACTIVE",
       "PASSIVE",
       "USERDEFINED",
@@ -1037,7 +1037,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcCoolingTowerTypeEnumStringMap[] = {
+   static const char * IfcCoolingTowerTypeEnumStringMap[] = {
       "NATURALDRAFT",
       "MECHANICALINDUCEDDRAFT",
       "MECHANICALFORCEDDRAFT",
@@ -1050,7 +1050,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcCostItemTypeEnumStringMap[] = {
+   static const char * IfcCostItemTypeEnumStringMap[] = {
       "USERDEFINED",
       "NOTDEFINED"
    };
@@ -1067,7 +1067,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcCostScheduleTypeEnumStringMap[] = {
+   static const char * IfcCostScheduleTypeEnumStringMap[] = {
       "BUDGET",
       "COSTPLAN",
       "ESTIMATE",
@@ -1094,7 +1094,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcCoveringTypeEnumStringMap[] = {
+   static const char * IfcCoveringTypeEnumStringMap[] = {
       "CEILING",
       "FLOORING",
       "CLADDING",
@@ -1116,7 +1116,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcCrewResourceTypeEnumStringMap[] = {
+   static const char * IfcCrewResourceTypeEnumStringMap[] = {
       "OFFICE",
       "SITE",
       "USERDEFINED",
@@ -1128,7 +1128,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcCurtainWallTypeEnumStringMap[] = {
+   static const char * IfcCurtainWallTypeEnumStringMap[] = {
       "USERDEFINED",
       "NOTDEFINED"
    };
@@ -1140,7 +1140,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcCurveInterpolationEnumStringMap[] = {
+   static const char * IfcCurveInterpolationEnumStringMap[] = {
       "LINEAR",
       "LOG_LINEAR",
       "LOG_LOG",
@@ -1163,7 +1163,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcDamperTypeEnumStringMap[] = {
+   static const char * IfcDamperTypeEnumStringMap[] = {
       "BACKDRAFTDAMPER",
       "BALANCINGDAMPER",
       "BLASTDAMPER",
@@ -1187,7 +1187,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcDataOriginEnumStringMap[] = {
+   static const char * IfcDataOriginEnumStringMap[] = {
       "MEASURED",
       "PREDICTED",
       "SIMULATED",
@@ -1251,7 +1251,7 @@ namespace ifc4
       USERDEFINED
    };
 
-   const char * IfcDerivedUnitEnumStringMap[] = {
+   static const char * IfcDerivedUnitEnumStringMap[] = {
       "ANGULARVELOCITYUNIT",
       "AREADENSITYUNIT",
       "COMPOUNDPLANEANGLEUNIT",
@@ -1312,7 +1312,7 @@ namespace ifc4
       NEGATIVE
    };
 
-   const char * IfcDirectionSenseEnumStringMap[] = {
+   static const char * IfcDirectionSenseEnumStringMap[] = {
       "POSITIVE",
       "NEGATIVE"
    };
@@ -1325,7 +1325,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcDiscreteAccessoryTypeEnumStringMap[] = {
+   static const char * IfcDiscreteAccessoryTypeEnumStringMap[] = {
       "ANCHORPLATE",
       "BRACKET",
       "SHOE",
@@ -1346,7 +1346,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcDistributionChamberElementTypeEnumStringMap[] = {
+   static const char * IfcDistributionChamberElementTypeEnumStringMap[] = {
       "FORMEDDUCT",
       "INSPECTIONCHAMBER",
       "INSPECTIONPIT",
@@ -1368,7 +1368,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcDistributionPortTypeEnumStringMap[] = {
+   static const char * IfcDistributionPortTypeEnumStringMap[] = {
       "CABLE",
       "CABLECARRIER",
       "DUCT",
@@ -1424,7 +1424,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcDistributionSystemEnumStringMap[] = {
+   static const char * IfcDistributionSystemEnumStringMap[] = {
       "AIRCONDITIONING",
       "AUDIOVISUAL",
       "CHEMICAL",
@@ -1480,7 +1480,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcDocumentConfidentialityEnumStringMap[] = {
+   static const char * IfcDocumentConfidentialityEnumStringMap[] = {
       "PUBLIC",
       "RESTRICTED",
       "CONFIDENTIAL",
@@ -1497,7 +1497,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcDocumentStatusEnumStringMap[] = {
+   static const char * IfcDocumentStatusEnumStringMap[] = {
       "DRAFT",
       "FINALDRAFT",
       "FINAL",
@@ -1517,7 +1517,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcDoorPanelOperationEnumStringMap[] = {
+   static const char * IfcDoorPanelOperationEnumStringMap[] = {
       "SWINGING",
       "DOUBLE_ACTING",
       "SLIDING",
@@ -1536,7 +1536,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcDoorPanelPositionEnumStringMap[] = {
+   static const char * IfcDoorPanelPositionEnumStringMap[] = {
       "LEFT",
       "MIDDLE",
       "RIGHT",
@@ -1555,7 +1555,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcDoorStyleConstructionEnumStringMap[] = {
+   static const char * IfcDoorStyleConstructionEnumStringMap[] = {
       "ALUMINIUM",
       "HIGH_GRADE_STEEL",
       "STEEL",
@@ -1588,7 +1588,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcDoorStyleOperationEnumStringMap[] = {
+   static const char * IfcDoorStyleOperationEnumStringMap[] = {
       "SINGLE_SWING_LEFT",
       "SINGLE_SWING_RIGHT",
       "DOUBLE_DOOR_SINGLE_SWING",
@@ -1617,7 +1617,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcDoorTypeEnumStringMap[] = {
+   static const char * IfcDoorTypeEnumStringMap[] = {
       "DOOR",
       "GATE",
       "TRAPDOOR",
@@ -1648,7 +1648,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcDoorTypeOperationEnumStringMap[] = {
+   static const char * IfcDoorTypeOperationEnumStringMap[] = {
       "SINGLE_SWING_LEFT",
       "SINGLE_SWING_RIGHT",
       "DOUBLE_DOOR_SINGLE_SWING",
@@ -1683,7 +1683,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcDuctFittingTypeEnumStringMap[] = {
+   static const char * IfcDuctFittingTypeEnumStringMap[] = {
       "BEND",
       "CONNECTOR",
       "ENTRY",
@@ -1702,7 +1702,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcDuctSegmentTypeEnumStringMap[] = {
+   static const char * IfcDuctSegmentTypeEnumStringMap[] = {
       "RIGIDSEGMENT",
       "FLEXIBLESEGMENT",
       "USERDEFINED",
@@ -1717,7 +1717,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcDuctSilencerTypeEnumStringMap[] = {
+   static const char * IfcDuctSilencerTypeEnumStringMap[] = {
       "FLATOVAL",
       "RECTANGULAR",
       "ROUND",
@@ -1746,7 +1746,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcElectricApplianceTypeEnumStringMap[] = {
+   static const char * IfcElectricApplianceTypeEnumStringMap[] = {
       "DISHWASHER",
       "ELECTRICCOOKER",
       "FREESTANDINGELECTRICHEATER",
@@ -1776,7 +1776,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcElectricDistributionBoardTypeEnumStringMap[] = {
+   static const char * IfcElectricDistributionBoardTypeEnumStringMap[] = {
       "CONSUMERUNIT",
       "DISTRIBUTIONBOARD",
       "MOTORCONTROLCENTRE",
@@ -1795,7 +1795,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcElectricFlowStorageDeviceTypeEnumStringMap[] = {
+   static const char * IfcElectricFlowStorageDeviceTypeEnumStringMap[] = {
       "BATTERY",
       "CAPACITORBANK",
       "HARMONICFILTER",
@@ -1813,7 +1813,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcElectricGeneratorTypeEnumStringMap[] = {
+   static const char * IfcElectricGeneratorTypeEnumStringMap[] = {
       "CHP",
       "ENGINEGENERATOR",
       "STANDALONE",
@@ -1831,7 +1831,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcElectricMotorTypeEnumStringMap[] = {
+   static const char * IfcElectricMotorTypeEnumStringMap[] = {
       "DC",
       "INDUCTION",
       "POLYPHASE",
@@ -1849,7 +1849,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcElectricTimeControlTypeEnumStringMap[] = {
+   static const char * IfcElectricTimeControlTypeEnumStringMap[] = {
       "TIMECLOCK",
       "TIMEDELAY",
       "RELAY",
@@ -1871,7 +1871,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcElementAssemblyTypeEnumStringMap[] = {
+   static const char * IfcElementAssemblyTypeEnumStringMap[] = {
       "ACCESSORY_ASSEMBLY",
       "ARCH",
       "BEAM_GRID",
@@ -1891,7 +1891,7 @@ namespace ifc4
       PARTIAL
    };
 
-   const char * IfcElementCompositionEnumStringMap[] = {
+   static const char * IfcElementCompositionEnumStringMap[] = {
       "COMPLEX",
       "ELEMENT",
       "PARTIAL"
@@ -1904,7 +1904,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcEngineTypeEnumStringMap[] = {
+   static const char * IfcEngineTypeEnumStringMap[] = {
       "EXTERNALCOMBUSTION",
       "INTERNALCOMBUSTION",
       "USERDEFINED",
@@ -1925,7 +1925,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcEvaporativeCoolerTypeEnumStringMap[] = {
+   static const char * IfcEvaporativeCoolerTypeEnumStringMap[] = {
       "DIRECTEVAPORATIVERANDOMMEDIAAIRCOOLER",
       "DIRECTEVAPORATIVERIGIDMEDIAAIRCOOLER",
       "DIRECTEVAPORATIVESLINGERSPACKAGEDAIRCOOLER",
@@ -1950,7 +1950,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcEvaporatorTypeEnumStringMap[] = {
+   static const char * IfcEvaporatorTypeEnumStringMap[] = {
       "DIRECTEXPANSION",
       "DIRECTEXPANSIONSHELLANDTUBE",
       "DIRECTEXPANSIONTUBEINTUBE",
@@ -1970,7 +1970,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcEventTriggerTypeEnumStringMap[] = {
+   static const char * IfcEventTriggerTypeEnumStringMap[] = {
       "EVENTRULE",
       "EVENTMESSAGE",
       "EVENTTIME",
@@ -1987,7 +1987,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcEventTypeEnumStringMap[] = {
+   static const char * IfcEventTypeEnumStringMap[] = {
       "STARTEVENT",
       "ENDEVENT",
       "INTERMEDIATEEVENT",
@@ -2004,7 +2004,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcExternalSpatialElementTypeEnumStringMap[] = {
+   static const char * IfcExternalSpatialElementTypeEnumStringMap[] = {
       "EXTERNAL",
       "EXTERNAL_EARTH",
       "EXTERNAL_WATER",
@@ -2025,7 +2025,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcFanTypeEnumStringMap[] = {
+   static const char * IfcFanTypeEnumStringMap[] = {
       "CENTRIFUGALFORWARDCURVED",
       "CENTRIFUGALRADIAL",
       "CENTRIFUGALBACKWARDINCLINEDCURVED",
@@ -2045,7 +2045,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcFastenerTypeEnumStringMap[] = {
+   static const char * IfcFastenerTypeEnumStringMap[] = {
       "GLUE",
       "MORTAR",
       "WELD",
@@ -2064,7 +2064,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcFilterTypeEnumStringMap[] = {
+   static const char * IfcFilterTypeEnumStringMap[] = {
       "AIRPARTICLEFILTER",
       "COMPRESSEDAIRFILTER",
       "ODORFILTER",
@@ -2085,7 +2085,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcFireSuppressionTerminalTypeEnumStringMap[] = {
+   static const char * IfcFireSuppressionTerminalTypeEnumStringMap[] = {
       "BREECHINGINLET",
       "FIREHYDRANT",
       "HOSEREEL",
@@ -2102,7 +2102,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcFlowDirectionEnumStringMap[] = {
+   static const char * IfcFlowDirectionEnumStringMap[] = {
       "SOURCE",
       "SINK",
       "SOURCEANDSINK",
@@ -2122,7 +2122,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcFlowInstrumentTypeEnumStringMap[] = {
+   static const char * IfcFlowInstrumentTypeEnumStringMap[] = {
       "PRESSUREGAUGE",
       "THERMOMETER",
       "AMMETER",
@@ -2144,7 +2144,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcFlowMeterTypeEnumStringMap[] = {
+   static const char * IfcFlowMeterTypeEnumStringMap[] = {
       "ENERGYMETER",
       "GASMETER",
       "OILMETER",
@@ -2163,7 +2163,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcFootingTypeEnumStringMap[] = {
+   static const char * IfcFootingTypeEnumStringMap[] = {
       "CAISSON_FOUNDATION",
       "FOOTING_BEAM",
       "PAD_FOOTING",
@@ -2185,7 +2185,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcFurnitureTypeEnumStringMap[] = {
+   static const char * IfcFurnitureTypeEnumStringMap[] = {
       "CHAIR",
       "TABLE",
       "DESK",
@@ -2203,7 +2203,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcGeographicElementTypeEnumStringMap[] = {
+   static const char * IfcGeographicElementTypeEnumStringMap[] = {
       "TERRAIN",
       "USERDEFINED",
       "NOTDEFINED"
@@ -2221,7 +2221,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcGeometricProjectionEnumStringMap[] = {
+   static const char * IfcGeometricProjectionEnumStringMap[] = {
       "GRAPH_VIEW",
       "SKETCH_VIEW",
       "MODEL_VIEW",
@@ -2238,7 +2238,7 @@ namespace ifc4
       LOCAL_COORDS
    };
 
-   const char * IfcGlobalOrLocalEnumStringMap[] = {
+   static const char * IfcGlobalOrLocalEnumStringMap[] = {
       "GLOBAL_COORDS",
       "LOCAL_COORDS"
    };
@@ -2252,7 +2252,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcGridTypeEnumStringMap[] = {
+   static const char * IfcGridTypeEnumStringMap[] = {
       "RECTANGULAR",
       "RADIAL",
       "TRIANGULAR",
@@ -2268,7 +2268,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcHeatExchangerTypeEnumStringMap[] = {
+   static const char * IfcHeatExchangerTypeEnumStringMap[] = {
       "PLATE",
       "SHELLANDTUBE",
       "USERDEFINED",
@@ -2293,7 +2293,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcHumidifierTypeEnumStringMap[] = {
+   static const char * IfcHumidifierTypeEnumStringMap[] = {
       "STEAMINJECTION",
       "ADIABATICAIRWASHER",
       "ADIABATICPAN",
@@ -2320,7 +2320,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcInterceptorTypeEnumStringMap[] = {
+   static const char * IfcInterceptorTypeEnumStringMap[] = {
       "CYCLONIC",
       "GREASE",
       "OIL",
@@ -2338,7 +2338,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcInternalOrExternalEnumStringMap[] = {
+   static const char * IfcInternalOrExternalEnumStringMap[] = {
       "INTERNAL",
       "EXTERNAL",
       "EXTERNAL_EARTH",
@@ -2355,7 +2355,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcInventoryTypeEnumStringMap[] = {
+   static const char * IfcInventoryTypeEnumStringMap[] = {
       "ASSETINVENTORY",
       "SPACEINVENTORY",
       "FURNITUREINVENTORY",
@@ -2370,7 +2370,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcJunctionBoxTypeEnumStringMap[] = {
+   static const char * IfcJunctionBoxTypeEnumStringMap[] = {
       "DATA",
       "POWER",
       "USERDEFINED",
@@ -2384,7 +2384,7 @@ namespace ifc4
       UNSPECIFIED
    };
 
-   const char * IfcKnotTypeStringMap[] = {
+   static const char * IfcKnotTypeStringMap[] = {
       "UNIFORM_KNOTS",
       "QUASI_UNIFORM_KNOTS",
       "PIECEWISE_BEZIER_KNOTS",
@@ -2415,7 +2415,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcLaborResourceTypeEnumStringMap[] = {
+   static const char * IfcLaborResourceTypeEnumStringMap[] = {
       "ADMINISTRATION",
       "CARPENTRY",
       "CLEANING",
@@ -2453,7 +2453,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcLampTypeEnumStringMap[] = {
+   static const char * IfcLampTypeEnumStringMap[] = {
       "COMPACTFLUORESCENT",
       "FLUORESCENT",
       "HALOGEN",
@@ -2473,7 +2473,7 @@ namespace ifc4
       AXIS3
    };
 
-   const char * IfcLayerSetDirectionEnumStringMap[] = {
+   static const char * IfcLayerSetDirectionEnumStringMap[] = {
       "AXIS1",
       "AXIS2",
       "AXIS3"
@@ -2486,7 +2486,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcLightDistributionCurveEnumStringMap[] = {
+   static const char * IfcLightDistributionCurveEnumStringMap[] = {
       "TYPE_A",
       "TYPE_B",
       "TYPE_C",
@@ -2507,7 +2507,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcLightEmissionSourceEnumStringMap[] = {
+   static const char * IfcLightEmissionSourceEnumStringMap[] = {
       "COMPACTFLUORESCENT",
       "FLUORESCENT",
       "HIGHPRESSUREMERCURY",
@@ -2529,7 +2529,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcLightFixtureTypeEnumStringMap[] = {
+   static const char * IfcLightFixtureTypeEnumStringMap[] = {
       "POINTSOURCE",
       "DIRECTIONSOURCE",
       "SECURITYLIGHTING",
@@ -2545,7 +2545,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcLoadGroupTypeEnumStringMap[] = {
+   static const char * IfcLoadGroupTypeEnumStringMap[] = {
       "LOAD_GROUP",
       "LOAD_CASE",
       "LOAD_COMBINATION",
@@ -2561,7 +2561,7 @@ namespace ifc4
       LOGICALNOTOR
    };
 
-   const char * IfcLogicalOperatorEnumStringMap[] = {
+   static const char * IfcLogicalOperatorEnumStringMap[] = {
       "LOGICALAND",
       "LOGICALOR",
       "LOGICALXOR",
@@ -2584,7 +2584,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcMechanicalFastenerTypeEnumStringMap[] = {
+   static const char * IfcMechanicalFastenerTypeEnumStringMap[] = {
       "ANCHORBOLT",
       "BOLT",
       "DOWEL",
@@ -2609,7 +2609,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcMedicalDeviceTypeEnumStringMap[] = {
+   static const char * IfcMedicalDeviceTypeEnumStringMap[] = {
       "AIRSTATION",
       "FEEDAIRUNIT",
       "OXYGENGENERATOR",
@@ -2636,7 +2636,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcMemberTypeEnumStringMap[] = {
+   static const char * IfcMemberTypeEnumStringMap[] = {
       "BRACE",
       "CHORD",
       "COLLAR",
@@ -2661,7 +2661,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcMotorConnectionTypeEnumStringMap[] = {
+   static const char * IfcMotorConnectionTypeEnumStringMap[] = {
       "BELTDRIVE",
       "COUPLING",
       "DIRECTDRIVE",
@@ -2673,7 +2673,7 @@ namespace ifc4
       NULLTYPE
    };
 
-   const char * IfcNullStyleStringMap[] = {
+   static const char * IfcNullStyleStringMap[] = {
       "NULLTYPE"
    };
 
@@ -2688,7 +2688,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcObjectTypeEnumStringMap[] = {
+   static const char * IfcObjectTypeEnumStringMap[] = {
       "PRODUCT",
       "PROCESS",
       "CONTROL",
@@ -2715,7 +2715,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcObjectiveEnumStringMap[] = {
+   static const char * IfcObjectiveEnumStringMap[] = {
       "CODECOMPLIANCE",
       "CODEWAIVER",
       "DESIGNINTENT",
@@ -2743,7 +2743,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcOccupantTypeEnumStringMap[] = {
+   static const char * IfcOccupantTypeEnumStringMap[] = {
       "ASSIGNEE",
       "ASSIGNOR",
       "LESSEE",
@@ -2762,7 +2762,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcOpeningElementTypeEnumStringMap[] = {
+   static const char * IfcOpeningElementTypeEnumStringMap[] = {
       "OPENING",
       "RECESS",
       "USERDEFINED",
@@ -2779,7 +2779,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcOutletTypeEnumStringMap[] = {
+   static const char * IfcOutletTypeEnumStringMap[] = {
       "AUDIOVISUALOUTLET",
       "COMMUNICATIONSOUTLET",
       "POWEROUTLET",
@@ -2794,7 +2794,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcPerformanceHistoryTypeEnumStringMap[] = {
+   static const char * IfcPerformanceHistoryTypeEnumStringMap[] = {
       "USERDEFINED",
       "NOTDEFINED"
    };
@@ -2807,7 +2807,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcPermeableCoveringOperationEnumStringMap[] = {
+   static const char * IfcPermeableCoveringOperationEnumStringMap[] = {
       "GRILL",
       "LOUVER",
       "SCREEN",
@@ -2823,7 +2823,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcPermitTypeEnumStringMap[] = {
+   static const char * IfcPermitTypeEnumStringMap[] = {
       "ACCESS",
       "BUILDING",
       "WORK",
@@ -2837,7 +2837,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcPhysicalOrVirtualEnumStringMap[] = {
+   static const char * IfcPhysicalOrVirtualEnumStringMap[] = {
       "PHYSICAL",
       "VIRTUAL",
       "NOTDEFINED"
@@ -2852,7 +2852,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcPileConstructionEnumStringMap[] = {
+   static const char * IfcPileConstructionEnumStringMap[] = {
       "CAST_IN_PLACE",
       "COMPOSITE",
       "PRECAST_CONCRETE",
@@ -2872,7 +2872,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcPileTypeEnumStringMap[] = {
+   static const char * IfcPileTypeEnumStringMap[] = {
       "BORED",
       "DRIVEN",
       "JETGROUTING",
@@ -2895,7 +2895,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcPipeFittingTypeEnumStringMap[] = {
+   static const char * IfcPipeFittingTypeEnumStringMap[] = {
       "BEND",
       "CONNECTOR",
       "ENTRY",
@@ -2917,7 +2917,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcPipeSegmentTypeEnumStringMap[] = {
+   static const char * IfcPipeSegmentTypeEnumStringMap[] = {
       "CULVERT",
       "FLEXIBLESEGMENT",
       "RIGIDSEGMENT",
@@ -2934,7 +2934,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcPlateTypeEnumStringMap[] = {
+   static const char * IfcPlateTypeEnumStringMap[] = {
       "CURTAIN_PANEL",
       "SHEET",
       "USERDEFINED",
@@ -2947,7 +2947,7 @@ namespace ifc4
       PCURVE_S2
    };
 
-   const char * IfcPreferredSurfaceCurveRepresentationStringMap[] = {
+   static const char * IfcPreferredSurfaceCurveRepresentationStringMap[] = {
       "CURVE3D",
       "PCURVE_S1",
       "PCURVE_S2"
@@ -2965,7 +2965,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcProcedureTypeEnumStringMap[] = {
+   static const char * IfcProcedureTypeEnumStringMap[] = {
       "ADVICE_CAUTION",
       "ADVICE_NOTE",
       "ADVICE_WARNING",
@@ -2982,7 +2982,7 @@ namespace ifc4
       AREA
    };
 
-   const char * IfcProfileTypeEnumStringMap[] = {
+   static const char * IfcProfileTypeEnumStringMap[] = {
       "CURVE",
       "AREA"
    };
@@ -2997,7 +2997,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcProjectOrderTypeEnumStringMap[] = {
+   static const char * IfcProjectOrderTypeEnumStringMap[] = {
       "CHANGEORDER",
       "MAINTENANCEWORKORDER",
       "MOVEORDER",
@@ -3012,7 +3012,7 @@ namespace ifc4
       TRUE_LENGTH
    };
 
-   const char * IfcProjectedOrTrueLengthEnumStringMap[] = {
+   static const char * IfcProjectedOrTrueLengthEnumStringMap[] = {
       "PROJECTED_LENGTH",
       "TRUE_LENGTH"
    };
@@ -3022,7 +3022,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcProjectionElementTypeEnumStringMap[] = {
+   static const char * IfcProjectionElementTypeEnumStringMap[] = {
       "USERDEFINED",
       "NOTDEFINED"
    };
@@ -3038,7 +3038,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcPropertySetTemplateTypeEnumStringMap[] = {
+   static const char * IfcPropertySetTemplateTypeEnumStringMap[] = {
       "PSET_TYPEDRIVENONLY",
       "PSET_TYPEDRIVENOVERRIDE",
       "PSET_OCCURRENCEDRIVEN",
@@ -3058,7 +3058,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcProtectiveDeviceTrippingUnitTypeEnumStringMap[] = {
+   static const char * IfcProtectiveDeviceTrippingUnitTypeEnumStringMap[] = {
       "ELECTRONIC",
       "ELECTROMAGNETIC",
       "RESIDUALCURRENT",
@@ -3079,7 +3079,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcProtectiveDeviceTypeEnumStringMap[] = {
+   static const char * IfcProtectiveDeviceTypeEnumStringMap[] = {
       "CIRCUITBREAKER",
       "EARTHLEAKAGECIRCUITBREAKER",
       "EARTHINGSWITCH",
@@ -3103,7 +3103,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcPumpTypeEnumStringMap[] = {
+   static const char * IfcPumpTypeEnumStringMap[] = {
       "CIRCULATOR",
       "ENDSUCTION",
       "SPLITCASE",
@@ -3123,7 +3123,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcRailingTypeEnumStringMap[] = {
+   static const char * IfcRailingTypeEnumStringMap[] = {
       "HANDRAIL",
       "GUARDRAIL",
       "BALUSTRADE",
@@ -3138,7 +3138,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcRampFlightTypeEnumStringMap[] = {
+   static const char * IfcRampFlightTypeEnumStringMap[] = {
       "STRAIGHT",
       "SPIRAL",
       "USERDEFINED",
@@ -3156,7 +3156,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcRampTypeEnumStringMap[] = {
+   static const char * IfcRampTypeEnumStringMap[] = {
       "STRAIGHT_RUN_RAMP",
       "TWO_STRAIGHT_RUN_RAMP",
       "QUARTER_TURN_RAMP",
@@ -3178,7 +3178,7 @@ namespace ifc4
       YEARLY_BY_POSITION
    };
 
-   const char * IfcRecurrenceTypeEnumStringMap[] = {
+   static const char * IfcRecurrenceTypeEnumStringMap[] = {
       "DAILY",
       "WEEKLY",
       "MONTHLY_BY_DAY_OF_MONTH",
@@ -3202,7 +3202,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcReflectanceMethodEnumStringMap[] = {
+   static const char * IfcReflectanceMethodEnumStringMap[] = {
       "BLINN",
       "FLAT",
       "GLASS",
@@ -3228,7 +3228,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcReinforcingBarRoleEnumStringMap[] = {
+   static const char * IfcReinforcingBarRoleEnumStringMap[] = {
       "MAIN",
       "SHEAR",
       "LIGATURE",
@@ -3246,7 +3246,7 @@ namespace ifc4
       TEXTURED
    };
 
-   const char * IfcReinforcingBarSurfaceEnumStringMap[] = {
+   static const char * IfcReinforcingBarSurfaceEnumStringMap[] = {
       "PLAIN",
       "TEXTURED"
    };
@@ -3264,7 +3264,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcReinforcingBarTypeEnumStringMap[] = {
+   static const char * IfcReinforcingBarTypeEnumStringMap[] = {
       "ANCHORING",
       "EDGE",
       "LIGATURE",
@@ -3282,7 +3282,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcReinforcingMeshTypeEnumStringMap[] = {
+   static const char * IfcReinforcingMeshTypeEnumStringMap[] = {
       "USERDEFINED",
       "NOTDEFINED"
    };
@@ -3313,7 +3313,7 @@ namespace ifc4
       USERDEFINED
    };
 
-   const char * IfcRoleEnumStringMap[] = {
+   static const char * IfcRoleEnumStringMap[] = {
       "SUPPLIER",
       "MANUFACTURER",
       "CONTRACTOR",
@@ -3357,7 +3357,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcRoofTypeEnumStringMap[] = {
+   static const char * IfcRoofTypeEnumStringMap[] = {
       "FLAT_ROOF",
       "SHED_ROOF",
       "GABLE_ROOF",
@@ -3394,7 +3394,7 @@ namespace ifc4
       ATTO
    };
 
-   const char * IfcSIPrefixStringMap[] = {
+   static const char * IfcSIPrefixStringMap[] = {
       "EXA",
       "PETA",
       "TERA",
@@ -3446,7 +3446,7 @@ namespace ifc4
       WEBER
    };
 
-   const char * IfcSIUnitNameStringMap[] = {
+   static const char * IfcSIUnitNameStringMap[] = {
       "AMPERE",
       "BECQUEREL",
       "CANDELA",
@@ -3494,7 +3494,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcSanitaryTerminalTypeEnumStringMap[] = {
+   static const char * IfcSanitaryTerminalTypeEnumStringMap[] = {
       "BATH",
       "BIDET",
       "CISTERN",
@@ -3514,7 +3514,7 @@ namespace ifc4
       TAPERED
    };
 
-   const char * IfcSectionTypeEnumStringMap[] = {
+   static const char * IfcSectionTypeEnumStringMap[] = {
       "UNIFORM",
       "TAPERED"
    };
@@ -3548,7 +3548,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcSensorTypeEnumStringMap[] = {
+   static const char * IfcSensorTypeEnumStringMap[] = {
       "COSENSOR",
       "CO2SENSOR",
       "CONDUCTANCESENSOR",
@@ -3586,7 +3586,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcSequenceEnumStringMap[] = {
+   static const char * IfcSequenceEnumStringMap[] = {
       "START_START",
       "START_FINISH",
       "FINISH_START",
@@ -3603,7 +3603,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcShadingDeviceTypeEnumStringMap[] = {
+   static const char * IfcShadingDeviceTypeEnumStringMap[] = {
       "JALOUSIE",
       "SHUTTER",
       "AWNING",
@@ -3626,7 +3626,7 @@ namespace ifc4
       Q_TIME
    };
 
-   const char * IfcSimplePropertyTemplateTypeEnumStringMap[] = {
+   static const char * IfcSimplePropertyTemplateTypeEnumStringMap[] = {
       "P_SINGLEVALUE",
       "P_ENUMERATEDVALUE",
       "P_BOUNDEDVALUE",
@@ -3650,7 +3650,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcSlabTypeEnumStringMap[] = {
+   static const char * IfcSlabTypeEnumStringMap[] = {
       "FLOOR",
       "ROOF",
       "LANDING",
@@ -3666,7 +3666,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcSolarDeviceTypeEnumStringMap[] = {
+   static const char * IfcSolarDeviceTypeEnumStringMap[] = {
       "SOLARCOLLECTOR",
       "SOLARPANEL",
       "USERDEFINED",
@@ -3680,7 +3680,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcSpaceHeaterTypeEnumStringMap[] = {
+   static const char * IfcSpaceHeaterTypeEnumStringMap[] = {
       "CONVECTOR",
       "RADIATOR",
       "USERDEFINED",
@@ -3697,7 +3697,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcSpaceTypeEnumStringMap[] = {
+   static const char * IfcSpaceTypeEnumStringMap[] = {
       "SPACE",
       "PARKING",
       "GFA",
@@ -3720,7 +3720,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcSpatialZoneTypeEnumStringMap[] = {
+   static const char * IfcSpatialZoneTypeEnumStringMap[] = {
       "CONSTRUCTION",
       "FIRESAFETY",
       "LIGHTING",
@@ -3741,7 +3741,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcStackTerminalTypeEnumStringMap[] = {
+   static const char * IfcStackTerminalTypeEnumStringMap[] = {
       "BIRDCAGE",
       "COWL",
       "RAINWATERHOPPER",
@@ -3759,7 +3759,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcStairFlightTypeEnumStringMap[] = {
+   static const char * IfcStairFlightTypeEnumStringMap[] = {
       "STRAIGHT",
       "WINDER",
       "SPIRAL",
@@ -3788,7 +3788,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcStairTypeEnumStringMap[] = {
+   static const char * IfcStairTypeEnumStringMap[] = {
       "STRAIGHT_RUN_STAIR",
       "TWO_STRAIGHT_RUN_STAIR",
       "QUARTER_WINDING_STAIR",
@@ -3815,7 +3815,7 @@ namespace ifc4
       READONLYLOCKED
    };
 
-   const char * IfcStateEnumStringMap[] = {
+   static const char * IfcStateEnumStringMap[] = {
       "READWRITE",
       "READONLY",
       "LOCKED",
@@ -3835,7 +3835,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcStructuralCurveActivityTypeEnumStringMap[] = {
+   static const char * IfcStructuralCurveActivityTypeEnumStringMap[] = {
       "CONST",
       "LINEAR",
       "POLYGONAL",
@@ -3857,7 +3857,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcStructuralCurveMemberTypeEnumStringMap[] = {
+   static const char * IfcStructuralCurveMemberTypeEnumStringMap[] = {
       "RIGID_JOINED_MEMBER",
       "PIN_JOINED_MEMBER",
       "CABLE",
@@ -3876,7 +3876,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcStructuralSurfaceActivityTypeEnumStringMap[] = {
+   static const char * IfcStructuralSurfaceActivityTypeEnumStringMap[] = {
       "CONST",
       "BILINEAR",
       "DISCRETE",
@@ -3893,7 +3893,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcStructuralSurfaceMemberTypeEnumStringMap[] = {
+   static const char * IfcStructuralSurfaceMemberTypeEnumStringMap[] = {
       "BENDING_ELEMENT",
       "MEMBRANE_ELEMENT",
       "SHELL",
@@ -3908,7 +3908,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcSubContractResourceTypeEnumStringMap[] = {
+   static const char * IfcSubContractResourceTypeEnumStringMap[] = {
       "PURCHASE",
       "WORK",
       "USERDEFINED",
@@ -3923,7 +3923,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcSurfaceFeatureTypeEnumStringMap[] = {
+   static const char * IfcSurfaceFeatureTypeEnumStringMap[] = {
       "MARK",
       "TAG",
       "TREATMENT",
@@ -3937,7 +3937,7 @@ namespace ifc4
       BOTH
    };
 
-   const char * IfcSurfaceSideStringMap[] = {
+   static const char * IfcSurfaceSideStringMap[] = {
       "POSITIVE",
       "NEGATIVE",
       "BOTH"
@@ -3957,7 +3957,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcSwitchingDeviceTypeEnumStringMap[] = {
+   static const char * IfcSwitchingDeviceTypeEnumStringMap[] = {
       "CONTACTOR",
       "DIMMERSWITCH",
       "EMERGENCYSTOP",
@@ -3978,7 +3978,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcSystemFurnitureElementTypeEnumStringMap[] = {
+   static const char * IfcSystemFurnitureElementTypeEnumStringMap[] = {
       "PANEL",
       "WORKSURFACE",
       "USERDEFINED",
@@ -3997,7 +3997,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcTankTypeEnumStringMap[] = {
+   static const char * IfcTankTypeEnumStringMap[] = {
       "BASIN",
       "BREAKPRESSURE",
       "EXPANSION",
@@ -4015,7 +4015,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcTaskDurationEnumStringMap[] = {
+   static const char * IfcTaskDurationEnumStringMap[] = {
       "ELAPSEDTIME",
       "WORKTIME",
       "NOTDEFINED"
@@ -4038,7 +4038,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcTaskTypeEnumStringMap[] = {
+   static const char * IfcTaskTypeEnumStringMap[] = {
       "ATTENDANCE",
       "CONSTRUCTION",
       "DEMOLITION",
@@ -4063,7 +4063,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcTendonAnchorTypeEnumStringMap[] = {
+   static const char * IfcTendonAnchorTypeEnumStringMap[] = {
       "COUPLER",
       "FIXED_END",
       "TENSIONING_END",
@@ -4080,7 +4080,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcTendonTypeEnumStringMap[] = {
+   static const char * IfcTendonTypeEnumStringMap[] = {
       "BAR",
       "COATED",
       "STRAND",
@@ -4096,7 +4096,7 @@ namespace ifc4
       DOWN
    };
 
-   const char * IfcTextPathStringMap[] = {
+   static const char * IfcTextPathStringMap[] = {
       "LEFT",
       "RIGHT",
       "UP",
@@ -4113,7 +4113,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcTimeSeriesDataTypeEnumStringMap[] = {
+   static const char * IfcTimeSeriesDataTypeEnumStringMap[] = {
       "CONTINUOUS",
       "DISCRETE",
       "DISCRETEBINARY",
@@ -4133,7 +4133,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcTransformerTypeEnumStringMap[] = {
+   static const char * IfcTransformerTypeEnumStringMap[] = {
       "CURRENT",
       "FREQUENCY",
       "INVERTER",
@@ -4150,7 +4150,7 @@ namespace ifc4
       CONTSAMEGRADIENTSAMECURVATURE
    };
 
-   const char * IfcTransitionCodeStringMap[] = {
+   static const char * IfcTransitionCodeStringMap[] = {
       "DISCONTINUOUS",
       "CONTINUOUS",
       "CONTSAMEGRADIENT",
@@ -4167,7 +4167,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcTransportElementTypeEnumStringMap[] = {
+   static const char * IfcTransportElementTypeEnumStringMap[] = {
       "ELEVATOR",
       "ESCALATOR",
       "MOVINGWALKWAY",
@@ -4183,7 +4183,7 @@ namespace ifc4
       UNSPECIFIED
    };
 
-   const char * IfcTrimmingPreferenceStringMap[] = {
+   static const char * IfcTrimmingPreferenceStringMap[] = {
       "CARTESIAN",
       "PARAMETER",
       "UNSPECIFIED"
@@ -4195,7 +4195,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcTubeBundleTypeEnumStringMap[] = {
+   static const char * IfcTubeBundleTypeEnumStringMap[] = {
       "FINNED",
       "USERDEFINED",
       "NOTDEFINED"
@@ -4234,7 +4234,7 @@ namespace ifc4
       USERDEFINED
    };
 
-   const char * IfcUnitEnumStringMap[] = {
+   static const char * IfcUnitEnumStringMap[] = {
       "ABSORBEDDOSEUNIT",
       "AMOUNTOFSUBSTANCEUNIT",
       "AREAUNIT",
@@ -4280,7 +4280,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcUnitaryControlElementTypeEnumStringMap[] = {
+   static const char * IfcUnitaryControlElementTypeEnumStringMap[] = {
       "ALARMPANEL",
       "CONTROLPANEL",
       "GASDETECTIONPANEL",
@@ -4303,7 +4303,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcUnitaryEquipmentTypeEnumStringMap[] = {
+   static const char * IfcUnitaryEquipmentTypeEnumStringMap[] = {
       "AIRHANDLER",
       "AIRCONDITIONINGUNIT",
       "DEHUMIDIFIER",
@@ -4339,7 +4339,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcValveTypeEnumStringMap[] = {
+   static const char * IfcValveTypeEnumStringMap[] = {
       "AIRRELEASE",
       "ANTIVACUUM",
       "CHANGEOVER",
@@ -4372,7 +4372,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcVibrationIsolatorTypeEnumStringMap[] = {
+   static const char * IfcVibrationIsolatorTypeEnumStringMap[] = {
       "COMPRESSION",
       "SPRING",
       "USERDEFINED",
@@ -4390,7 +4390,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcVoidingFeatureTypeEnumStringMap[] = {
+   static const char * IfcVoidingFeatureTypeEnumStringMap[] = {
       "CUTOUT",
       "NOTCH",
       "HOLE",
@@ -4415,7 +4415,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcWallTypeEnumStringMap[] = {
+   static const char * IfcWallTypeEnumStringMap[] = {
       "MOVABLE",
       "PARAPET",
       "PARTITIONING",
@@ -4441,7 +4441,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcWasteTerminalTypeEnumStringMap[] = {
+   static const char * IfcWasteTerminalTypeEnumStringMap[] = {
       "FLOORTRAP",
       "FLOORWASTE",
       "GULLYSUMP",
@@ -4470,7 +4470,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcWindowPanelOperationEnumStringMap[] = {
+   static const char * IfcWindowPanelOperationEnumStringMap[] = {
       "SIDEHUNGRIGHTHAND",
       "SIDEHUNGLEFTHAND",
       "TILTANDTURNRIGHTHAND",
@@ -4496,7 +4496,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcWindowPanelPositionEnumStringMap[] = {
+   static const char * IfcWindowPanelPositionEnumStringMap[] = {
       "LEFT",
       "MIDDLE",
       "RIGHT",
@@ -4516,7 +4516,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcWindowStyleConstructionEnumStringMap[] = {
+   static const char * IfcWindowStyleConstructionEnumStringMap[] = {
       "ALUMINIUM",
       "HIGH_GRADE_STEEL",
       "STEEL",
@@ -4541,7 +4541,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcWindowStyleOperationEnumStringMap[] = {
+   static const char * IfcWindowStyleOperationEnumStringMap[] = {
       "SINGLE_PANEL",
       "DOUBLE_PANEL_VERTICAL",
       "DOUBLE_PANEL_HORIZONTAL",
@@ -4563,7 +4563,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcWindowTypeEnumStringMap[] = {
+   static const char * IfcWindowTypeEnumStringMap[] = {
       "WINDOW",
       "SKYLIGHT",
       "LIGHTDOME",
@@ -4585,7 +4585,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcWindowTypePartitioningEnumStringMap[] = {
+   static const char * IfcWindowTypePartitioningEnumStringMap[] = {
       "SINGLE_PANEL",
       "DOUBLE_PANEL_VERTICAL",
       "DOUBLE_PANEL_HORIZONTAL",
@@ -4607,7 +4607,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcWorkCalendarTypeEnumStringMap[] = {
+   static const char * IfcWorkCalendarTypeEnumStringMap[] = {
       "FIRSTSHIFT",
       "SECONDSHIFT",
       "THIRDSHIFT",
@@ -4623,7 +4623,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcWorkPlanTypeEnumStringMap[] = {
+   static const char * IfcWorkPlanTypeEnumStringMap[] = {
       "ACTUAL",
       "BASELINE",
       "PLANNED",
@@ -4639,7 +4639,7 @@ namespace ifc4
       NOTDEFINED
    };
 
-   const char * IfcWorkScheduleTypeEnumStringMap[] = {
+   static const char * IfcWorkScheduleTypeEnumStringMap[] = {
       "ACTUAL",
       "BASELINE",
       "PLANNED",
