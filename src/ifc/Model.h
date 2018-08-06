@@ -1,5 +1,4 @@
-#ifndef IFC_IFCMODEL_H_INCLUDED
-#define IFC_IFCMODEL_H_INCLUDED
+#pragma once
 
 #include <memory>
 #include <map>
@@ -14,6 +13,24 @@ namespace ifc
       Model(const std::string& schema_name)
          : m_schema_name(schema_name) {}
       
+      inline Entity* createEntityByName(const std::string& type_name, int id)
+      {
+         auto it = m_constructor_map.find(type_name);
+         if (it != m_constructor_map.end())
+         {
+            Entity* e = it->second();
+            e->m_id = id;
+
+            if (m_entities.find(id) != m_entities.end())
+               throw new std::runtime_error("Entity already stored at id = " + std::to_string(id));
+            else 
+               m_entities[id] = std::unique_ptr<Entity>(e);
+
+            return e;
+         }
+         return nullptr;
+      }
+
       template<class T>
       inline T* createEntity()
       {
@@ -66,7 +83,8 @@ namespace ifc
       std::string m_schema_name;
 
       std::map<size_t, std::unique_ptr<Entity>> m_entities;
+
+      static std::map<std::string, std::function<ifc::Entity*()>> m_constructor_map;
+
    };
 }
-
-#endif

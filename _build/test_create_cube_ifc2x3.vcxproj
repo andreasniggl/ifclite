@@ -57,7 +57,7 @@
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
-      <AdditionalIncludeDirectories>..\src\ifc;..\..\..\code\mx\v1\dep\releases\ext\boost\1.64.0-vc140\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\src\ifc;C:\code\mx\v1\dep\releases\ext\boost\1.64.0-vc140\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
@@ -69,7 +69,7 @@
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>..\bin\release\x64;..\..\..\code\mx\v1\dep\releases\ext\boost\1.64.0-vc140\debug\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\bin\release\x64;C:\code\mx\v1\dep\releases\ext\boost\1.64.0-vc140\debug\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
     </Link>
   </ItemDefinitionGroup>
@@ -78,14 +78,14 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\src\ifc;..\..\..\code\mx\v1\dep\releases\ext\boost\1.64.0-vc140\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\src\ifc;C:\code\mx\v1\dep\releases\ext\boost\1.64.0-vc140\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>..\bin\debug\x64;..\..\..\code\mx\v1\dep\releases\ext\boost\1.64.0-vc140\debug\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\bin\debug\x64;C:\code\mx\v1\dep\releases\ext\boost\1.64.0-vc140\debug\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
     </Link>
   </ItemDefinitionGroup>
@@ -94,6 +94,8 @@
     <ClInclude Include="..\src\ifc\StepWriter.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\src\ifc\EntityConstructorMap.cpp" />
+    <ClCompile Include="..\src\ifc\StepParser.cpp" />
     <ClCompile Include="..\src\test\test_create_cube_ifc2x3.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

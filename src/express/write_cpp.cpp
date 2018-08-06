@@ -184,6 +184,8 @@ void sdai::CppGenerator::generateInterface() const
    // write type definitions
    generateTypeDefinitions(include_dir.string());
 
+   generateTypeConstructors(include_dir.string());
+
    // write entities
    for (const auto e : m_schema.entities())
    {
@@ -279,6 +281,10 @@ void sdai::CppGenerator::generateTypeDefinitions(const std::string& include_dire
             fs << "      \"" << td.items[i] << "\"";
          }
          fs << std::endl << "   };" << std::endl;
+
+         // count
+         fs << std::endl;
+         fs << "   static const int " << td.name << "Count = " << td.items.size() << ";" << std::endl;
       }
       else if (td.type == TypeDefinition::StorageTypeEnum::Select) // select
       {
@@ -288,6 +294,60 @@ void sdai::CppGenerator::generateTypeDefinitions(const std::string& include_dire
 
    fs << "}" << std::endl;
    //fs << "#endif" << std::endl;
+}
+
+
+void sdai::CppGenerator::generateTypeConstructors(const std::string& include_directory) const
+{
+   std::string schema = m_schema.schema_name();
+
+   auto header_file = boost::filesystem::path(include_directory) / "EntityConstructorMap.cpp";
+
+   // open file
+   boost::filesystem::ofstream fs;
+   fs.open(header_file);
+
+   if (!fs.is_open())
+      throw new std::runtime_error("Unable to open file: " + header_file.string());
+
+   util::write_header_text(fs, schema);
+
+   // includes
+   fs << "#include <map>" << std::endl;
+   fs << "#include <functional>" << std::endl;
+   fs << std::endl;
+
+   fs << "#include \"Model.h\"" << std::endl;
+   fs << "#include \"StepWriter.h\"" << std::endl;
+   fs << "#include \"StepParser.h\"" << std::endl;
+   fs << std::endl;
+
+   const auto& entities = m_schema.entities();
+
+   // write includes
+   for (const auto& e : entities)
+   {
+      if (e.is_abstract == false)
+      {
+         fs << "#include \"" << schema << "\\" << e.name << ".h\"" << std::endl;
+      }
+   }
+   fs << std::endl;
+
+   fs << "std::map<std::string, std::function<ifc::Entity*()>> ifc::Model::m_constructor_map =" << std::endl;
+   fs << "{" << std::endl;
+
+   for (const auto& e : entities)
+   {
+      if (e.is_abstract == false)
+      {
+         std::string name_uc = boost::to_upper_copy(std::string(e.name));
+         fs << "   { \"" << name_uc << "\", []() { return new " << schema << "::" << e.name << "(); } }," << std::endl;
+      }
+   }
+   fs << "};" << std::endl;
+
+   fs.close();
 }
 
 
@@ -554,15 +614,19 @@ void sdai::CppGenerator::generateEntityHeader(const Entity& e, const std::string
    // enter protected ...
    fs << "   protected:" << std::endl;
 
-   // serialization routine
+   // calls to serialization of attributes
+   auto all_attrs = m_schema.getAllAttributesOfEntity(e.name);
+
+   if(all_attrs.size() > 0)
    {
       fs << "      virtual void serialize(ifc::StepWriter& w) const" << std::endl;
       fs << "      {" << std::endl;
       fs << "         w.beginEntity(this);" << std::endl;
 
-      auto all_attrs = m_schema.getAllAttributesOfEntity(e.name);
       for (const auto a : all_attrs)
       {
+         std::string type_name = util::map_to_cpp_type(a->type_name);
+
          switch (a->storage_type)
          {
          case Attribute::StorageTypeEnum::InstanceScalar:
@@ -578,26 +642,18 @@ void sdai::CppGenerator::generateEntityHeader(const Entity& e, const std::string
             fs << "         w.writeAttributeInstance(" << a->name << ");" << std::endl;
             break;
          case Attribute::StorageTypeEnum::ValueScalar:
-            //fs << "         w.writeAttributeValueScalar(" << a->name << ");" << std::endl;
-            fs << "         w.writeAttributeValue(" << a->name << ");" << std::endl;
-            break;
          case Attribute::StorageTypeEnum::ValueList:
-            //fs << "         w.writeAttributeValueList(" << a->name << ");" << std::endl;
-            fs << "         w.writeAttributeValue(" << a->name << ");" << std::endl;
-            break;
          case Attribute::StorageTypeEnum::ValueMatrix:
-            //fs << "         w.writeAttributeValueMatrix(" << a->name << ");" << std::endl;
             fs << "         w.writeAttributeValue(" << a->name << ");" << std::endl;
             break;
          case Attribute::StorageTypeEnum::Enumeration:
-            //fs << "         w.writeAttributeValueEnumeration(" << util::map_to_cpp_type(a->type_name) << "StringMap, " << a->name << ");" << std::endl;
-            fs << "         w.writeAttributeValue(" << util::map_to_cpp_type(a->type_name) << "StringMap, " << a->name << ");" << std::endl;
+            fs << "         w.writeAttributeValue(" << type_name << "StringMap, " << a->name << ");" << std::endl;
             break;
          case Attribute::StorageTypeEnum::Select:
-            fs << "         w.writeAttributeSelect<" << util::map_to_cpp_type(a->type_name) << "WriterVisitor>(" << a->name << ");" << std::endl;
+            fs << "         w.writeAttributeSelect<" << type_name << "WriterVisitor>(" << a->name << ");" << std::endl;
             break;
          case Attribute::StorageTypeEnum::SelectList:
-            fs << "         w.writeAttributeSelect<" << util::map_to_cpp_type(a->type_name) << "WriterVisitor>(" << a->name << ");" << std::endl;
+            fs << "         w.writeAttributeSelect<" << type_name << "WriterVisitor>(" << a->name << ");" << std::endl;
             break;         
          default:
             throw std::exception("Unknown type");
@@ -606,9 +662,45 @@ void sdai::CppGenerator::generateEntityHeader(const Entity& e, const std::string
 
       fs << "         w.endEntity();" << std::endl;
       fs << "      }" << std::endl;
+      fs << std::endl;
    }
 
-   fs << std::endl;
+   // calls to parser of attributes
+   if(all_attrs.size() > 0)
+   {
+      fs << "      virtual void parse(std::istream& is, ifc::StepParser& p)" << std::endl;
+      fs << "      {" << std::endl;
+
+      for (const auto a : all_attrs)
+      {
+         std::string type_name = util::map_to_cpp_type(a->type_name);
+
+         switch (a->storage_type)
+         {
+         case Attribute::StorageTypeEnum::InstanceScalar:
+         case Attribute::StorageTypeEnum::InstanceList:
+         case Attribute::StorageTypeEnum::InstanceMatrix:
+            fs << "         p.parseAttributeInstance(is, " << a->name << ");" << std::endl;
+            break;
+
+         case Attribute::StorageTypeEnum::ValueScalar:
+         case Attribute::StorageTypeEnum::ValueList:
+         case Attribute::StorageTypeEnum::ValueMatrix:
+            fs << "         p.parseAttributeValue(is, " << a->name << ");" << std::endl;
+            break;
+
+         case Attribute::StorageTypeEnum::Enumeration:
+            fs << "         p.parseAttributeValue(is, " << type_name << "StringMap, " << type_name << "Count, " << a->name << ");" << std::endl;
+            break;
+
+         default:
+            break;
+         }
+      }
+
+      fs << "      }" << std::endl;
+      fs << std::endl;
+   }
 
    //// test
    //auto all_attrs = m_schema.getAllAttributesOfEntity(e.name);

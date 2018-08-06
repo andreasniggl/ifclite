@@ -1,5 +1,4 @@
-#ifndef IFC_IFCENTITY_H_INCLUDED
-#define IFC_IFCENTITY_H_INCLUDED
+#pragma once
 
 #include <string>
 
@@ -10,6 +9,7 @@ namespace ifc
 {
    class Model;
    class StepWriter;
+   class StepParser;
 	
    class Entity
    {
@@ -25,10 +25,11 @@ namespace ifc
       Entity() = default;
 
       virtual void serialize(StepWriter& w) const = 0;
+      virtual void parse(std::istream& is, StepParser& p) {}; // TODO: make abstract
 
       size_t m_id;
 
       friend class Model;
+      friend class StepParser;
    };	
 }
-#endif

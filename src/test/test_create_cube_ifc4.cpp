@@ -8,7 +8,7 @@
 #include "ifc4\IfcSite.h"
 #include "ifc4\IfcBuilding.h"
 #include "ifc4\IfcBuildingStorey.h"
-//#include "ifc4\IfcBuildingElementProxy.h"
+#include "ifc4\IfcBuildingElementProxy.h"
 #include "ifc4\IfcShapeRepresentation.h"
 #include "ifc4\IfcProductDefinitionShape.h"
 #include "ifc4\IfcWall.h"
@@ -69,7 +69,7 @@ namespace ifc4
    }
 
 
-   IfcWall* create_wall(Ifc4Model& model, const std::array<double,3>& origin)
+   IfcBuildingElement* create_element(Ifc4Model& model, const std::array<double,3>& origin)
    {
       // create cube
       IfcCartesianPoint* p[8];
@@ -119,18 +119,16 @@ namespace ifc4
       auto* productDefinitionShape = model.createEntity<IfcProductDefinitionShape>();
       productDefinitionShape->Representations.push_back(shapeRepresentation);
 
-      //auto* buildingElementProxy = model.createEntity<IfcBuildingElementProxy>();
-      //buildingElementProxy->GlobalId = ifc::Guid().toBase64();
-      //buildingElementProxy->OwnerHistory = ownerHistory;
-      //buildingElementProxy->Name = "A Cube";
-      //buildingElementProxy->Representation = productDefinitionShape;
+      auto* buildingElementProxy = model.createEntity<IfcBuildingElementProxy>();
+      buildingElementProxy->Name = "A Cube";
+      buildingElementProxy->Representation = productDefinitionShape;
 
-      auto* wall = model.createEntity<IfcWall>();
-      wall->Name = "A Wall";
-      wall->Representation = productDefinitionShape;
-      wall->PredefinedType = IfcWallTypeEnum::STANDARD;
+      //auto* wall = model.createEntity<IfcWall>();
+      //wall->Name = "A Wall";
+      //wall->Representation = productDefinitionShape;
+      //wall->PredefinedType = IfcWallTypeEnum::STANDARD;
 
-      return wall;
+      return buildingElementProxy;
    }
 
    void fill_model(Ifc4Model& model)
@@ -171,9 +169,9 @@ namespace ifc4
       auto* element_aggr = model.createEntity<IfcRelContainedInSpatialStructure>();
       element_aggr->RelatingStructure = storey;
 
-      auto* slab = create_slab(model);
+      auto* element = create_element(model, {0.,0.,0.});
 
-      element_aggr->RelatedElements.push_back(slab);
+      element_aggr->RelatedElements.push_back(element);
 
       //auto* cube_a = create_wall(model, { 0.0,0.0,0.0 });
       //auto* cube_b = create_wall(model, { 3.0,0.0,0.0 });
@@ -217,13 +215,13 @@ int main(int argc, char** argv)
       fill_model(model);
 
       std::ofstream fs;
-      fs.open("D:\\sofistik\\proj\\ifclite\\test\\test.ifc");
+      fs.open("cube_ifc4.ifc");
 
       if (fs.is_open())
       {
          ifc::StepWriter w(fs);
 
-         w.header.filename = "test.ifc";
+         w.header.filename = "cube_ifc4.ifc";
          w.header.organization = "SOFiSTiK AG";
          w.header.description = "ViewDefinition [IFC4 RV V1.1]";
          w.header.originating_system = "ifclite";

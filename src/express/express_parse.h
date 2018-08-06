@@ -175,6 +175,7 @@ namespace sof {
          const ExpressSchema& m_schema;
 
          void generateTypeDefinitions(const std::string& include_directory) const;
+         void generateTypeConstructors(const std::string& include_directory) const;
          void generateSelectHeader(const TypeDefinition& type, const std::string& include_directory) const;
          void generateEntityHeader(const Entity& e, const std::string& include_directory) const;
       };
